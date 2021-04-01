@@ -25,7 +25,7 @@ function setDate() {
     minsHand.style.transform = `rotate(${minsDegrees}deg)`;
 
     const hours = now.getHours();
-    const hourDegrees = ((hours / 60) * 360)+180;
+    const hourDegrees = ((hours / 60) * 360);
     if (hourDegrees == 90) {
         hourHand.classList.add('transition-off');
     } else {
